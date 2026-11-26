@@ -1,5 +1,24 @@
 [
   {
+    "codigo": "SMARTWATCH",
+    "titulo": "Relogio Inteligente Smartwatch Alexa Chamadas Novante",
+    "loja": "Mercado Livre",
+    "chave_loja": "ml",
+    "cor_loja": "#FFE600",
+    "cor_texto_loja": "#000000",
+    "selo": "Envio FULL",
+    "preco": "R$ 121,99",
+    "preco_anterior": "",
+    "beneficios": [
+      "Tem Alexa integrada, atende chamadas no pulso e é resistente à água sem tirar o celular do bolso"
+    ],
+    "link": "https://meli.la/1NWWz2k",
+    "foto": "assets/SMARTWATCH.webp",
+    "score": 92,
+    "publicado": true,
+    "ordem": "2026-11-26T11:34:14"
+  },
+  {
     "codigo": "MICROFONE",
     "titulo": "Microfone Duplo Lapela Sem Fio Anti Ruido Tipo C E Iphone",
     "loja": "Mercado Livre",
@@ -19,25 +38,6 @@
     "score": 100,
     "publicado": true,
     "ordem": "2026-11-26T07:59:27"
-  },
-  {
-    "codigo": "SMARTWATCH",
-    "titulo": "Relogio Inteligente Smartwatch Alexa Chamadas Novante",
-    "loja": "Mercado Livre",
-    "chave_loja": "ml",
-    "cor_loja": "#FFE600",
-    "cor_texto_loja": "#000000",
-    "selo": "Envio FULL",
-    "preco": "R$ 121,99",
-    "preco_anterior": "",
-    "beneficios": [
-      "Tem Alexa integrada, atende chamadas no pulso e é resistente à água sem tirar o celular do bolso"
-    ],
-    "link": "https://meli.la/1NWWz2k",
-    "foto": "assets/SMARTWATCH.webp",
-    "score": null,
-    "publicado": false,
-    "ordem": ""
   },
   {
     "codigo": "COMPRESSOR",
