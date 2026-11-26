@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ofertas Verificadas — Vitrine</title>
+<meta name="description" content="Vitrine oficial Ofertas Verificadas (@achadoseofertas.produtos): ofertas auditadas com nota alta, selo de loja oficial e link direto. Busque pelo código do vídeo.">
+<meta name="theme-color" content="#15803d">
+<meta property="og:title" content="Ofertas Verificadas — Vitrine Oficial">
+<meta property="og:description" content="Busque o código do vídeo e abra a oferta verificada.">
+<style>
+:root{--bg:#f4f6f5;--card:#fff;--ink:#0f1a14;--mute:#5b6b62;--line:#dfe6e2;--ok:#15803d;--ok-ink:#fff;
+--ok-soft:#e7f6ec;--chip:#fff;--shadow:0 1px 2px rgba(15,26,20,.06),0 6px 20px rgba(15,26,20,.06)}
+@media (prefers-color-scheme:dark){:root{--bg:#0c120f;--card:#151d18;--ink:#eef4f0;--mute:#9db0a5;--line:#26332c;
+--ok:#22c55e;--ok-ink:#06210f;--ok-soft:#143021;--chip:#1b2620;--shadow:none}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+.topo{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 16px 12px}
+.wrap{max-width:1080px;margin:0 auto}
+.marca{display:flex;align-items:center;gap:10px}
+.logo{width:40px;height:40px;border-radius:12px;background:var(--ok);color:var(--ok-ink);display:grid;place-items:center;flex:none}
+.marca h1{font-size:18px;line-height:1.15;margin:0;letter-spacing:-.01em}
+.marca p{margin:0;color:var(--mute);font-size:13px}
+.selo-curadoria{margin-left:auto;display:none;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--ok);
+background:var(--ok-soft);padding:6px 10px;border-radius:999px;white-space:nowrap}
+@media (min-width:560px){.selo-curadoria{display:inline-flex}}
+.busca{margin-top:12px;position:relative}
+.busca input{width:100%;font:inherit;font-size:16px;padding:12px 14px 12px 42px;border-radius:12px;border:1px solid var(--line);
+background:var(--card);color:var(--ink);outline:none}
+.busca input:focus{border-color:var(--ok);box-shadow:0 0 0 3px var(--ok-soft)}
+.busca svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--mute)}
+.filtros{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.filtros::-webkit-scrollbar{display:none}
+.filtros button{flex:none;font:inherit;font-size:14px;font-weight:600;padding:8px 12px;border-radius:999px;border:1px solid var(--line);
+background:var(--chip);color:var(--ink);cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.filtros button .n{color:var(--mute);font-weight:500}
+.filtros button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filtros button[aria-pressed=true] .n{color:inherit;opacity:.7}
+.filtros button:disabled{opacity:.45;cursor:default}
+.dot{width:10px;height:10px;border-radius:50%;border:1px solid rgba(0,0,0,.2)}
+main{padding:16px}
+.info{color:var(--mute);font-size:14px;margin:0 0 12px}
+.grade{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:640px){.grade{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:980px){.grade{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.card.foco{outline:3px solid var(--ok);outline-offset:2px}
+.card{scroll-margin-top:230px}
+.foto{position:relative;aspect-ratio:4/3;background:#fff;display:grid;place-items:center;overflow:hidden}
+.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:16px}
+.foto .ph{font-weight:800;font-size:28px;color:#94a39a}
+.loja{position:absolute;left:10px;top:10px;font-size:12px;font-weight:700;padding:5px 9px;border-radius:999px;border:1px solid rgba(0,0,0,.15)}
+.codigo{position:absolute;right:10px;top:10px;font-size:12px;font-weight:800;letter-spacing:.04em;background:#0f1a14;color:#fff;
+padding:5px 9px;border-radius:8px}
+.corpo{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.corpo h2{font-size:17px;line-height:1.3;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12px;font-weight:600;padding:4px 8px;border-radius:8px;background:var(--ok-soft);color:var(--ok);display:inline-flex;gap:4px;align-items:center}
+.tag.neutra{background:var(--chip);color:var(--mute);border:1px solid var(--line)}
+.preco{display:flex;align-items:baseline;gap:8px}
+.preco b{font-size:24px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.preco s{color:var(--mute);font-size:14px}
+ul.ben{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:14px}
+ul.ben li{display:flex;gap:8px;align-items:flex-start}
+ul.ben svg{flex:none;margin-top:2px;color:var(--ok)}
+.cta{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;
+background:var(--ok);color:var(--ok-ink);text-decoration:none;font-weight:800;font-size:16px}
+.cta:active{transform:translateY(1px)}
+.aviso{font-size:12px;color:var(--mute);margin:0;text-align:center}
+.vazio{text-align:center;color:var(--mute);padding:40px 12px;display:none}
+footer{padding:8px 16px 32px;color:var(--mute);font-size:12px;text-align:center}
+footer p{max-width:640px;margin:6px auto}
+</style>
+</head>
+<body>
+<header class="topo"><div class="wrap">
+  <div class="marca">
+    <div class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+    <div><h1>Ofertas Verificadas</h1><p>@achadoseofertas.produtos · curadoria auditada</p></div>
+    <span class="selo-curadoria"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Curadoria auditada</span>
+  </div>
+  <div class="busca"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" inputmode="search" autocomplete="off"
+    placeholder="Digite o código do vídeo (ex.: MICROFONE) ou o produto" aria-label="Buscar por código ou produto"></div>
+  <nav class="filtros" aria-label="Filtrar por loja"><button type="button" data-loja="todas" aria-pressed="true">Todas <span class="n">3</span></button><button type="button" data-loja="ml" aria-pressed="false"><span class="dot" style="background:#FFE600"></span>Mercado Livre <span class="n">3</span></button><button type="button" data-loja="amazon" aria-pressed="false" disabled><span class="dot" style="background:#FF9900"></span>Amazon <span class="n">0</span></button><button type="button" data-loja="shopee" aria-pressed="false" disabled><span class="dot" style="background:#EE4D2D"></span>Shopee <span class="n">0</span></button><button type="button" data-loja="tiktok" aria-pressed="false" disabled><span class="dot" style="background:#00F2EA"></span>TikTok Shop <span class="n">0</span></button><button type="button" data-loja="magalu" aria-pressed="false" disabled><span class="dot" style="background:#0086FF"></span>Magalu <span class="n">0</span></button><button type="button" data-loja="aliexpress" aria-pressed="false" disabled><span class="dot" style="background:#FF4747"></span>AliExpress <span class="n">0</span></button></nav>
+</div></header>
+<main class="wrap">
+  <p class="info" id="info" aria-live="polite"></p>
+  <section class="grade" id="grade">
+<article class="card" id="MICROFONE" data-codigo="MICROFONE" data-loja="ml" data-busca="microfone microfone duplo lapela sem fio anti ruido tipo c e iphone mercado livre"><div class="foto"><img src="assets/MICROFONE.webp" alt="Microfone Duplo Lapela Sem Fio Anti Ruido Tipo C E Iphone" loading="lazy" decoding="async" width="640" height="480"><span class="loja" style="background:#FFE600;color:#000000">Mercado Livre</span><span class="codigo">MICROFONE</span></div><div class="corpo"><h2>Microfone Duplo Lapela Sem Fio Anti Ruido Tipo C E Iphone</h2><div class="meta"><span class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Envio FULL</span><span class="tag" title="Índice de Credibilidade da auditoria">Credibilidade 100/100</span><span class="tag neutra">🎬 No vídeo</span></div><div class="preco"><b>R$ 69,66</b></div><ul class="ben"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Funciona em Android e iPhone</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Elimina ruído externo na hora</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Grava com áudio de estúdio sem fios</span></li></ul><a class="cta" href="https://meli.la/2YBHaov" target="_blank" rel="nofollow sponsored noopener">Ver oferta no Mercado Livre →</a><p class="aviso">Preço e estoque podem mudar a qualquer momento.</p></div></article>
+<article class="card" id="SMARTWATCH" data-codigo="SMARTWATCH" data-loja="ml" data-busca="smartwatch relogio inteligente smartwatch alexa chamadas novante mercado livre"><div class="foto"><img src="assets/SMARTWATCH.webp" alt="Relogio Inteligente Smartwatch Alexa Chamadas Novante" loading="lazy" decoding="async" width="640" height="480"><span class="loja" style="background:#FFE600;color:#000000">Mercado Livre</span><span class="codigo">SMARTWATCH</span></div><div class="corpo"><h2>Relogio Inteligente Smartwatch Alexa Chamadas Novante</h2><div class="meta"><span class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Envio FULL</span></div><div class="preco"><b>R$ 121,99</b></div><ul class="ben"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Tem Alexa integrada, atende chamadas no pulso e é resistente à água sem tirar o celular do bolso</span></li></ul><a class="cta" href="https://meli.la/1NWWz2k" target="_blank" rel="nofollow sponsored noopener">Ver oferta no Mercado Livre →</a><p class="aviso">Preço e estoque podem mudar a qualquer momento.</p></div></article>
+<article class="card" id="COMPRESSOR" data-codigo="COMPRESSOR" data-loja="ml" data-busca="compressor compressor de ar portatil ver 815 com tela digital mercado livre"><div class="foto"><img src="assets/COMPRESSOR.webp" alt="Compressor De Ar Portatil Ver 815 Com Tela Digital" loading="lazy" decoding="async" width="640" height="480"><span class="loja" style="background:#FFE600;color:#000000">Mercado Livre</span><span class="codigo">COMPRESSOR</span></div><div class="corpo"><h2>Compressor De Ar Portatil Ver 815 Com Tela Digital</h2><div class="meta"><span class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Envio FULL</span></div><div class="preco"><b>R$ 63,19</b></div><ul class="ben"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Calibra pneu de carro, moto e bike em segundos com visor digital automático sem depender de posto</span></li></ul><a class="cta" href="https://meli.la/2YVEwYu" target="_blank" rel="nofollow sponsored noopener">Ver oferta no Mercado Livre →</a><p class="aviso">Preço e estoque podem mudar a qualquer momento.</p></div></article>
+  </section>
+  <p class="vazio" id="vazio">Nenhuma oferta com esse código ainda. Confira a grafia ou veja todas as ofertas.</p>
+</main>
+<footer>
+  <p>Cada produto passa pela auditoria Oferta Verificada: nota alta, loja oficial e checagem de defeitos reportados.</p>
+  <p>Links de afiliado: podemos receber comissão pelas compras, sem custo extra para você. Preço e estoque são definidos pela loja e podem mudar.</p>
+  <p>Atualizado em 26/11/2026 10:25 · <a href="https://linktr.ee/achadoseofertas.produtos" rel="noopener">@achadoseofertas.produtos</a></p>
+</footer>
+<script type="application/json" id="dados">[{"codigo": "MICROFONE", "titulo": "Microfone Duplo Lapela Sem Fio Anti Ruido Tipo C E Iphone", "loja": "Mercado Livre", "chave_loja": "ml", "cor_loja": "#FFE600", "cor_texto_loja": "#000000", "selo": "Envio FULL", "preco": "R$ 69,66", "preco_anterior": "", "beneficios": ["Funciona em Android e iPhone", "Elimina ruído externo na hora", "Grava com áudio de estúdio sem fios"], "link": "https://meli.la/2YBHaov", "foto": "assets/MICROFONE.webp", "score": 100, "publicado": true, "ordem": "2026-11-26T07:59:27"}, {"codigo": "SMARTWATCH", "titulo": "Relogio Inteligente Smartwatch Alexa Chamadas Novante", "loja": "Mercado Livre", "chave_loja": "ml", "cor_loja": "#FFE600", "cor_texto_loja": "#000000", "selo": "Envio FULL", "preco": "R$ 121,99", "preco_anterior": "", "beneficios": ["Tem Alexa integrada, atende chamadas no pulso e é resistente à água sem tirar o celular do bolso"], "link": "https://meli.la/1NWWz2k", "foto": "assets/SMARTWATCH.webp", "score": null, "publicado": false, "ordem": ""}, {"codigo": "COMPRESSOR", "titulo": "Compressor De Ar Portatil Ver 815 Com Tela Digital", "loja": "Mercado Livre", "chave_loja": "ml", "cor_loja": "#FFE600", "cor_texto_loja": "#000000", "selo": "Envio FULL", "preco": "R$ 63,19", "preco_anterior": "", "beneficios": ["Calibra pneu de carro, moto e bike em segundos com visor digital automático sem depender de posto"], "link": "https://meli.la/2YVEwYu", "foto": "assets/COMPRESSOR.webp", "score": null, "publicado": false, "ordem": ""}]</script>
+<script>
+const dados = JSON.parse(document.getElementById('dados').textContent);
+const grade = document.getElementById('grade'), q = document.getElementById('q');
+const info = document.getElementById('info'), vazio = document.getElementById('vazio');
+const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim();
+let loja = 'todas';
+const cards = [...grade.querySelectorAll('.card')];
+function aplicar(){
+  const t = norm(q.value); let n = 0, exato = null;
+  cards.forEach(c => {
+    const okLoja = loja === 'todas' || c.dataset.loja === loja;
+    const okBusca = !t || c.dataset.busca.includes(t);
+    const vis = okLoja && okBusca; c.hidden = !vis; if (vis) n++;
+    c.classList.toggle('foco', !!t && norm(c.dataset.codigo) === t);
+    if (t && norm(c.dataset.codigo) === t) exato = c;
+  });
+  vazio.style.display = n ? 'none' : 'block';
+  info.textContent = n + (n === 1 ? ' oferta verificada' : ' ofertas verificadas') + (t ? ' para “' + q.value.trim() + '”' : '');
+  return exato;
+}
+document.querySelectorAll('.filtros button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.filtros button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  loja = b.dataset.loja; aplicar();
+}));
+q.addEventListener('input', aplicar);
+function doEndereco(){
+  const p = new URLSearchParams(location.search).get('q') || decodeURIComponent(location.hash.slice(1));
+  if (p) { q.value = p; const e = aplicar(); if (e) e.scrollIntoView({block:'start'}); } else aplicar();
+}
+window.addEventListener('hashchange', doEndereco);
+doEndereco();
+</script>
+</body>
+</html>

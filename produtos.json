@@ -1,0 +1,61 @@
+[
+  {
+    "codigo": "MICROFONE",
+    "titulo": "Microfone Duplo Lapela Sem Fio Anti Ruido Tipo C E Iphone",
+    "loja": "Mercado Livre",
+    "chave_loja": "ml",
+    "cor_loja": "#FFE600",
+    "cor_texto_loja": "#000000",
+    "selo": "Envio FULL",
+    "preco": "R$ 69,66",
+    "preco_anterior": "",
+    "beneficios": [
+      "Funciona em Android e iPhone",
+      "Elimina ruído externo na hora",
+      "Grava com áudio de estúdio sem fios"
+    ],
+    "link": "https://meli.la/2YBHaov",
+    "foto": "assets/MICROFONE.webp",
+    "score": 100,
+    "publicado": true,
+    "ordem": "2026-11-26T07:59:27"
+  },
+  {
+    "codigo": "SMARTWATCH",
+    "titulo": "Relogio Inteligente Smartwatch Alexa Chamadas Novante",
+    "loja": "Mercado Livre",
+    "chave_loja": "ml",
+    "cor_loja": "#FFE600",
+    "cor_texto_loja": "#000000",
+    "selo": "Envio FULL",
+    "preco": "R$ 121,99",
+    "preco_anterior": "",
+    "beneficios": [
+      "Tem Alexa integrada, atende chamadas no pulso e é resistente à água sem tirar o celular do bolso"
+    ],
+    "link": "https://meli.la/1NWWz2k",
+    "foto": "assets/SMARTWATCH.webp",
+    "score": null,
+    "publicado": false,
+    "ordem": ""
+  },
+  {
+    "codigo": "COMPRESSOR",
+    "titulo": "Compressor De Ar Portatil Ver 815 Com Tela Digital",
+    "loja": "Mercado Livre",
+    "chave_loja": "ml",
+    "cor_loja": "#FFE600",
+    "cor_texto_loja": "#000000",
+    "selo": "Envio FULL",
+    "preco": "R$ 63,19",
+    "preco_anterior": "",
+    "beneficios": [
+      "Calibra pneu de carro, moto e bike em segundos com visor digital automático sem depender de posto"
+    ],
+    "link": "https://meli.la/2YVEwYu",
+    "foto": "assets/COMPRESSOR.webp",
+    "score": null,
+    "publicado": false,
+    "ordem": ""
+  }
+]
