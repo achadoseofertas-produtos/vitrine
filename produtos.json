@@ -57,5 +57,26 @@
     "score": 100,
     "publicado": true,
     "ordem": "2026-11-26T07:59:27"
+  },
+  {
+    "codigo": "SANDUICHE",
+    "titulo": "Sanduicheira Eletrica Cadence Click SAN400 Preta",
+    "loja": "Mercado Livre",
+    "chave_loja": "ml",
+    "cor_loja": "#FFE600",
+    "cor_texto_loja": "#000000",
+    "selo": "Envio FULL",
+    "preco": "R$ 80,91",
+    "preco_anterior": "",
+    "beneficios": [
+      "Prepara 2 sanduíches e grelhados em minutos",
+      "Chapas antiaderentes mais profundas e fáceis de limpar",
+      "Trava de segurança e LED indicador sem tirar da tomada"
+    ],
+    "link": "https://meli.la/1eJnsc3",
+    "foto": "assets/SANDUICHE.webp",
+    "score": 100,
+    "publicado": false,
+    "ordem": ""
   }
 ]
