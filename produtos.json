@@ -1,5 +1,24 @@
 [
   {
+    "codigo": "COMPRESSOR",
+    "titulo": "Compressor De Ar Portatil Ver 815 Com Tela Digital",
+    "loja": "Mercado Livre",
+    "chave_loja": "ml",
+    "cor_loja": "#FFE600",
+    "cor_texto_loja": "#000000",
+    "selo": "Envio FULL",
+    "preco": "R$ 63,19",
+    "preco_anterior": "",
+    "beneficios": [
+      "Calibra pneu de carro, moto e bike em segundos com visor digital automático sem depender de posto"
+    ],
+    "link": "https://meli.la/2YVEwYu",
+    "foto": "assets/COMPRESSOR.webp",
+    "score": 100,
+    "publicado": true,
+    "ordem": "2026-11-27T05:52:55"
+  },
+  {
     "codigo": "SMARTWATCH",
     "titulo": "Relogio Inteligente Smartwatch Alexa Chamadas Novante",
     "loja": "Mercado Livre",
@@ -38,24 +57,5 @@
     "score": 100,
     "publicado": true,
     "ordem": "2026-11-26T07:59:27"
-  },
-  {
-    "codigo": "COMPRESSOR",
-    "titulo": "Compressor De Ar Portatil Ver 815 Com Tela Digital",
-    "loja": "Mercado Livre",
-    "chave_loja": "ml",
-    "cor_loja": "#FFE600",
-    "cor_texto_loja": "#000000",
-    "selo": "Envio FULL",
-    "preco": "R$ 63,19",
-    "preco_anterior": "",
-    "beneficios": [
-      "Calibra pneu de carro, moto e bike em segundos com visor digital automático sem depender de posto"
-    ],
-    "link": "https://meli.la/2YVEwYu",
-    "foto": "assets/COMPRESSOR.webp",
-    "score": null,
-    "publicado": false,
-    "ordem": ""
   }
 ]
