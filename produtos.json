@@ -78,5 +78,47 @@
     "score": 100,
     "publicado": false,
     "ordem": ""
+  },
+  {
+    "codigo": "FURADEIRA",
+    "titulo": "Furadeira Parafusadeira Bateria 12V WAP BPF 12K3 Black",
+    "loja": "Mercado Livre",
+    "chave_loja": "ml",
+    "cor_loja": "#FFE600",
+    "cor_texto_loja": "#000000",
+    "selo": "Envio FULL",
+    "preco": "R$ 120,60",
+    "preco_anterior": "",
+    "beneficios": [
+      "Bateria 12V de lítio com indicador de carga",
+      "18 níveis de torque para parafusar e furar",
+      "Acompanha maleta completa com 13 acessórios"
+    ],
+    "link": "https://meli.la/2evgxyP",
+    "foto": "assets/FURADEIRA.webp",
+    "score": 100,
+    "publicado": false,
+    "ordem": ""
+  },
+  {
+    "codigo": "HOTWHEELS",
+    "titulo": "Kit Com 5 Carrinhos Hot Wheels Coloridos Mattel",
+    "loja": "Mercado Livre",
+    "chave_loja": "ml",
+    "cor_loja": "#FFE600",
+    "cor_texto_loja": "#000000",
+    "selo": "Envio FULL",
+    "preco": "R$ 49,90",
+    "preco_anterior": "",
+    "beneficios": [
+      "Kit oficial Mattel com 5 carrinhos exclusivos em escala 1:64",
+      "Acabamento em metal die-cast super resistente para brincar ou colecionar",
+      "Presente perfeito com entrega rápida FULL antes do Natal"
+    ],
+    "link": "https://meli.la/2aiz5M2",
+    "foto": "assets/HOTWHEELS.webp",
+    "score": 100,
+    "publicado": false,
+    "ordem": ""
   }
 ]
